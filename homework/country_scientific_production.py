@@ -49,6 +49,7 @@ def add_countries_column(affiliations):
 
 
 def clean_countries(affiliations):
+    """Unifica la denominación de los paises."""
 
     affiliations = affiliations.copy()
     affiliations["countries"] = affiliations["countries"].str.replace(
